@@ -1,0 +1,32 @@
+doctype html
+html
+
+  head
+    title= title
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/index.css')
+
+  body
+    .main-container
+      .title-bar
+        .title-text
+            span PL<span style="color: orange;">A</span>ST<span style="color: orange;">I</span>C
+        .title-subtext the <span style="color: orange;">game</span>&nbsp;
+        
+      .hero-image-container
+        .hero-image.one
+          .hero-image-inner
+        .hero-image.two
+          .hero-image-inner
+        .hero-image.three
+          .hero-image-inner
+          
+      .nav
+        .nav-button.selected(style="padding-left: 15px; padding-right: 15px;")
+         .glyphicon.glyphicon-home
+        .nav-button News
+        .nav-button Screenshots
+        .nav-button Videos
+        .nav-button About
+        .nav-button Contact
