@@ -301,6 +301,19 @@ body {
     .title-text {
         font-size: 70px;
     }
+    .hero-image {
+        width: 70%;
+    }
+    .hero-image.one {
+        left: -3%;
+    }
+    .hero-image.two {
+        top: 22%;
+        left: 15%;
+    }
+    .hero-image.three {
+        right: -10%;
+    }
     .nav {
         border-radius: 0px;
     }
