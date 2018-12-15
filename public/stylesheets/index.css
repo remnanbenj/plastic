@@ -71,7 +71,6 @@ body {
 /* Title */
 
 .title-bar {
-    position: relative;
     background: #444;
     box-shadow: 0px 3px 5px rgba(0,0,0,0.5);
     border-radius: 0px 0px 6px 6px;
@@ -90,11 +89,72 @@ body {
 
 
 .title-subtext {
+    display: inline-block;
     padding-top: 12px;
     color: #FFF;
     font-size: 30px;
     line-height: 80%;
 }
+
+.social-container {
+    float: right;
+    padding-top: 15px;
+}
+
+.title-social {
+    float: right;
+    width: 54px;
+    height: 50px;
+    margin-right: 20px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.title-social:hover {
+    transform: translate(0px, -2px);
+}
+
+.facebook {
+    background-size: 40%;
+    background-image: url('/images/w_facebook_icn.png');
+}
+
+.instagram {
+    background-size: 40%;
+    background-image: url('/images/w_instagram_icn.png');
+}
+
+.twitter {
+    background-size: 50%;
+    background-image: url('/images/w_twitter_icn.png');
+}
+
+.youtube {
+    background-size: 50%;
+    background-image: url('/images/w_youtube_icn.png');
+}
+
+
+.facebook:hover {
+    background-image: url('/images/facebook_icn.png');
+}
+
+.instagram:hover {
+    background-image: url('/images/instagram_icn.png');
+}
+
+.twitter:hover {
+    background-image: url('/images/twitter_icn.png');
+}
+
+.youtube:hover {
+    background-image: url('/images/youtube_icn.png');
+}
+
+
+/* Hero Image */
 
 .hero-image-container {
     position: relative;
@@ -316,5 +376,18 @@ body {
     }
     .nav {
         border-radius: 0px;
+    }
+}
+
+
+@media only screen and (max-width: 640px) {
+    .social-container {
+        padding-top: 0px;
+        width: 100%;
+    }
+    .title-social{
+        width: calc((100% - 100px) / 4);
+        height: 20px;
+        padding-bottom: 40px;
     }
 }
