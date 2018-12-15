@@ -8,13 +8,13 @@
 
 body {
   background: #f;
-  font: 14px "Jockey One", Helvetica, Arial, sans-serif;
+  font: 16px "Jockey One", Helvetica, Arial, sans-serif;
   color: #444444;
   margin: 0px;
   padding: 0px;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .main-container {
@@ -22,7 +22,38 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     min-height: 100vh;
+  padding-bottom: 100px;
 }
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ccc;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #444;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: orange;
+}
+
+@media only screen and (max-width: 820px) {
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+
+/* Title */
 
 .title-bar {
     position: relative;
@@ -55,15 +86,6 @@ body {
     height: 50vw;
     max-height: 500px;
     z-index: 1;
-}
-
-.hero-image-inner {
-    position: relative;
-    padding-top: 56.25%;
-    background: #ccc;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	background-size: cover;
 }
 
 .hero-image {
@@ -112,6 +134,15 @@ body {
     z-index: 5;
 }
 
+.hero-image-inner {
+    position: relative;
+    padding-top: 56.25%;
+    background: #ccc;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+}
+
 .nav {
     position: relative;
     padding: 10px;
@@ -148,6 +179,54 @@ body {
     margin-right: 0px;
 }
 
+
+/* Content */
+
+.content {
+    position: relative;
+    padding: 30px;
+}
+
+.content-title {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 44px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.content-image {
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    padding: 1%;
+    box-shadow: 3px 3px 15px 2px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: all 0.1s;
+}
+.content-image-inner {
+    position: relative;
+    padding-top: 56.25%;
+    background: #ccc;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+}
+
+.content-image:hover {
+    transform: none!important;
+    background: orange;
+}
+.content-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* Media Query */
 
 @media only screen and (max-width: 800px) {
     .main-container {
