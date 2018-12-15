@@ -350,6 +350,11 @@ body {
     transform: translate(0px, -5px);
 }
 
+#preload-01 { background: url('/images/facebook_icn.png') no-repeat -9999px -9999px; }
+#preload-02 { background: url('/images/instagram_icn.png') no-repeat -9999px -9999px; }
+#preload-03 { background: url('/images/twitter_icn.png') no-repeat -9999px -9999px; }
+#preload-04 { background: url('/images/youtube_icn.png') no-repeat -9999px -9999px; }
+
 
 /* Media Query */
 
