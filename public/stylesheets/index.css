@@ -75,10 +75,11 @@ body {
     box-shadow: 0px 3px 5px rgba(0,0,0,0.5);
     border-radius: 0px 0px 6px 6px;
     overflow: auto;
+    padding-bottom: 10px;
 }
 
 .title-text {
-    PADDING: 10px 10px 12px 10px;
+    PADDING: 10px 0px 0px 10px;
     float: left;
     color: #FFF;
     font-size: 80px;
@@ -91,6 +92,7 @@ body {
 .title-subtext {
     display: inline-block;
     padding-top: 12px;
+    padding-left: 10px;
     color: #FFF;
     font-size: 30px;
     line-height: 80%;
@@ -384,10 +386,14 @@ body {
     .social-container {
         padding-top: 0px;
         width: 100%;
+        max-width: 340px;
+        float: none;
+        overflow: auto;
+        margin: 0 auto;
     }
     .title-social{
         width: calc((100% - 100px) / 4);
-        height: 20px;
-        padding-bottom: 40px;
+        height: 30px;
+        margin-top: 10px;
     }
 }
